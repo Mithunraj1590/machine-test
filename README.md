@@ -58,5 +58,3 @@ my-app/
 - Edit `src/components/Banner.js` for the banner/carousel.
 - Edit `src/components/ListCountries.js` for country list logic.
 
-## License
-MIT 
