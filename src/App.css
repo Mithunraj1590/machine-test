@@ -1,0 +1,163 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.container {
+  width: 100%;
+  max-width: 95vw;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+/* xs: <576px */
+@media (max-width: 575.98px) {
+  .container {
+    max-width: 98vw;
+  }
+}
+
+/* sm: ≥576px */
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+/* md: ≥768px */
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+/* lg: ≥992px */
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+/* xl: ≥1200px */
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1077px;
+  }
+}
+
+/* xxl: ≥1400px */
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1310px;
+  }
+}
+
+/* xxxl: ≥1600px (custom) */
+@media (min-width: 1600px) {
+  .container {
+    max-width: 1450px;
+  }
+}
+
+.header{
+padding: 20px 0;
+}
+.navmenu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.18);
+  z-index: 1040;
+}
+
+.navmenu-slide-in {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 260px;
+  height: 100vh;
+  background: #fff;
+  z-index: 1050;
+  box-shadow: -2px 0 12px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+  animation: slideInRight 0.25s cubic-bezier(0.4,0,0.2,1);
+}
+
+@keyframes slideInRight {
+  from { right: -280px; opacity: 0; }
+  to { right: 0; opacity: 1; }
+}
+
+@media (min-width: 992px) {
+  .navmenu-overlay, .navmenu-slide-in { display: none !important; }
+}
+
+.navbar-title {
+  font-size: 24px;
+}
+
+.navbar-hamburger {
+  cursor: pointer;
+}
+
+.navbar-close {
+  cursor: pointer;
+}
+
+.navbar-tabs-desktop {
+  gap: 35px;
+  font-size: 16px;
+}
+
+.navbar-tabs-mobile {
+  gap: 24px;
+  font-size: 18px;
+}
+
+.banner-tabs .tab {
+  cursor: pointer;
+  margin-bottom: 0;
+}
+
+@media (max-width: 767.98px) {
+  .navbar-tabs-mobile .tab {
+    margin-bottom: 18px;
+  }
+}
